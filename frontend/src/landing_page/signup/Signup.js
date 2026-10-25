@@ -11,7 +11,7 @@ function Signup() {
 
     try {
       // Backend ko signup request bhej raha hai
-      await axios.post('http://localhost:3002/signup', {
+      await API.post('/signup', {
         username,
         email,
         password,
