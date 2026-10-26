@@ -20,7 +20,9 @@ const app = express();
 
 // 2. CORS Setup
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: ["http://localhost:5173", "http://localhost:3000",
+        "https://zerodha-clone-git-main-zerodha-clone1.vercel.app"
+    ],
     credentials: true
 }));
 
