@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+
+import API from '../../api';
 
 function Navbar() {
   const handleLogout = async () => {
     try {
-      await axios.get('http://localhost:3002/logout', { withCredentials: true });
+      await API.get('/logout', { withCredentials: true });
       window.location.href = '/login';
     } catch (err) {
       console.error('Logout error:', err);
