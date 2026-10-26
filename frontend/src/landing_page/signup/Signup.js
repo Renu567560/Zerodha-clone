@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import API from '../../api';
 
 function Signup() {
   const [username, setUsername] = useState('');
