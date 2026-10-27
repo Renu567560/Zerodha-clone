@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import API from '../../api';
+import API from '../api';
 
 function Navbar() {
   const handleLogout = async () => {
