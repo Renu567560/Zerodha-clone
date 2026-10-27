@@ -18,12 +18,14 @@ const uri = process.env.MONGO_URL;
 // 1. App Initialization (Sabse Pehle)
 const app = express();
 
-// 2. CORS Setup
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000",
-        "https://zerodha-clone-git-main-zerodha-clone1.vercel.app"
-    ],
-    credentials: true
+  origin: [
+    "http://localhost:5173", 
+    "http://localhost:3000",
+    "https://zerodha-clone-git-main-zerodha-clone1.vercel.app",
+    "https://zerodha-clone-nine-sigma.vercel.app"
+  ],
+  credentials: true
 }));
 
 app.use(bodyParser.json());
